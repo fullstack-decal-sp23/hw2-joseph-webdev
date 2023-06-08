@@ -1,165 +1,223 @@
 /* BEGIN SETUP (you will not need to use these) */
 #intro {
-  color: rgb(0, 0, 0);
-  text-align: center;
-  margin: 50px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    margin: 50px;
+  }
+  
+  .flags {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  h2 {
+    font-size: medium;
+    font-weight: 200;
+  }
+  /* END SETUP */
+  
+  /* Classes that you might find useful */
+  /* You may also have to implement your own classes */
+  
+  .flag {
+    height: 300px;
+    width: 500px;
+    border-style: solid;
+    margin-bottom: 5rem;
+    margin: 0 10px 0 10px;
+    
+  }
+  
+  .twovert {
+    height: 50%;
+  }
+  
+  .threevert {
+    width: 100%;
+    height: 33.3%;
+  }
+  
+  .threehoriz {
+    width: 33.3%;
+  }
+  
+  .narrow {
+    height: 17.5%;
+  }
+  
+  .wide {
+    height: 30%;
+  }
+  
+  .circle {
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    position: relative;
+    left: 85px;
+    top: 50px;
+  }
+  
+  /* Colors */
+  
+  /* QUESTION 1 */
+  
+  .orange {
+    background-color: orange;
+  }
+  
+  .yellow {
+    background-color: yellow;
+  }
+  
+  .green {
+    background-color: green;
+  }
+  
+  .blue {
+    background-color: blue;
+  }
+  
+  .lightblue {
+    background-color: lightblue;
+  }
+  
+  .purple {
+    background-color: purple;
+  }
+  
+  .white {
+    background-color: #fff;
+  }
+  
+  .black {
+    background-color: #000;
+  }
+  
+  /* BEGIN QUESTION 2 */
+  
+  .thailand-red {
+    background-color: #b5002d;
+    height: calc(100% / 5);
+  }
+  
+  .thailand-white {
+    background-color: #fff;
+    height: calc(100% / 5);
+  }
+  
+  .thailand-blue {
+    background-color: #2e2a4c;
+    height: calc(100% / 5);
+  }
+  
+  /* END QUESTION 2 */
+  
+  /* BEGIN QUESTION 3 */
+  
+  .romania-blue {
+    background-color: #002c84;
+    width: calc(100% / 3);
+    height: 100%;
+  }
+  
+  .romania-yellow {
+    background-color: #ffcf00;
+    width: calc(100% / 3);
+    height: 100%;
+  }
+  
+  .romania-red {
+    background-color: #e10017;
+    width: calc(100% / 3);
+    height: 100%;
+  }
+  
+  /* END QUESTION 3 */
+  
+  /* QUESTION 4 */
+  .mexico-green {
+    background-color: #006341;
+    width: calc(100% / 3);
+    height: 100%;
+  }
+  
+  .mexico-img {
+    width: calc(100% / 3);
+    height: calc(100% / 2);
+    transform: translate(0, 50%);
+    -webkit-transform: translate(0, 50%);
+    -moz-transform: translate(0, 50%);
+    -ms-transform: translate(0, 50%);
+    -o-transform: translate(0, 50%);
+}
+  
+  .mexico-white {
+    background-color: #fff;
+    width: calc(100% / 3);
+    height: 100%;
+  }
+
+  .mexico-red {
+    background-color: #ce1126;
+    width: calc(100% / 3);
+    height: 100%;
+  }
+  
+  /* QUESTION 6 */
+  .margin-container {
+    height: 300px;
+    width: 1030px;
+    border-style: solid;
+    margin-bottom: 5rem;
+    display: flex;
+    justify-content: center;
+  }
+  
+  /* For margin practice */
+  .flag1 {
+    background-color: red;
+    /* TODO */
+  }
+  
+  .flag2 {
+    background-color: blue;
+    /* TODO */
+  }
+  /* For padding practice */
+  .padding-container {
+    box-sizing: border-box;
+    background-color: lightblue;
+    background-clip: content-box, padding-box;
+    padding: 60px;
+    /* TODO */
+  }
+
+  .red {
+    background-color: red;
+  }
+
+  #white {
+    background-color: white;
+  }
+
+  .light-blue {
+    background-color: lightblue;
+  }
+
+
+  .label {
+    color: blue;
+    transition: 0.1s ease all  ;
+    -webkit-transition: 0.1s ease all  ;
+    -moz-transition: 0.1s ease all  ;
+    -ms-transition: 0.1s ease all  ;
+    -o-transition: 0.1s ease all  ;
 }
 
-.flags {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-h2 {
-  font-size: medium;
-  font-weight: 200;
-}
-/* END SETUP */
-
-/* Classes that you might find useful */
-/* You may also have to implement your own classes */
-
-.flag {
-  height: 300px;
-  width: 500px;
-  border-style: solid;
-  margin-bottom: 5rem;
-}
-
-.twovert {
-  height: 50%;
-}
-
-.threevert {
-}
-
-.threehoriz {
-  width: 33.3%;
-}
-
-.narrow {
-  height: 17.5%;
-}
-
-.wide {
-  height: 30%;
-}
-
-.circle {
-  border-radius: 50%;
-  height: 200px;
-  width: 200px;
-  position: relative;
-  left: 85px;
-  top: 50px;
-}
-
-/* Colors */
-
-/* QUESTION 1 */
-
-.orange {
-  background-color: orange;
-}
-
-.yellow {
-  background-color: yellow;
-}
-
-.green {
-  background-color: green;
-}
-
-.blue {
-  background-color: blue;
-}
-
-.lightblue {
-  background-color: lightblue;
-}
-
-.purple {
-  background-color: purple;
-}
-
-.white {
-  background-color: #fff;
-}
-
-.black {
-  background-color: #000;
-}
-
-/* BEGIN QUESTION 2 */
-
-.thailand-red {
-  /* TODO */
-}
-
-.thailand-white {
-  /* TODO */
-}
-
-.thailand-blue {
-  /* TODO */
-}
-
-/* END QUESTION 2 */
-
-/* BEGIN QUESTION 3 */
-
-.romania-blue {
-  background-color: #002c84;
-}
-
-.romania-yellow {
-  background-color: #ffcf00;
-}
-
-.romania-red {
-  background-color: #e10017;
-}
-
-/* END QUESTION 3 */
-
-/* QUESTION 4 */
-.mexico-green {
-  background-color: #006341;
-}
-
-.mexico-img {
-  /* TODO */
-}
-
-.mexico-red {
-  background-color: #ce1126;
-}
-
-/* QUESTION 6 */
-.margin-container {
-  height: 300px;
-  width: 1030px;
-  border-style: solid;
-  margin-bottom: 5rem;
-  display: flex;
-  justify-content: center;
-}
-
-/* For margin practice */
-.flag1 {
-  background-color: red;
-  /* TODO */
-}
-
-.flag2 {
-  background-color: blue;
-  /* TODO */
-}
-/* For padding practice */
-.padding-container {
-  box-sizing: border-box;
-  background-color: lightblue;
-  background-clip: content-box, padding-box;
-  /* TODO */
-}
+  .label:hover {
+    color: red;
+    font-size: 1.25em;
+    font-weight: bold;
+  }
